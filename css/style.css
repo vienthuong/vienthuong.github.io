@@ -1,0 +1,91 @@
+*{
+	font-family:"Tahoma";
+}
+.wrapper{
+	width:910px;
+	margin-top:7px;
+	margin-left:20px;
+}
+h1, h2 a, h3 a{
+	text-decoration:none;
+	color:#58a808;
+	font-weight:normal;
+}
+.page-title{
+	font-size:20px;
+	color:#58a808;
+	background: url("../images/dots.gif") no-repeat left 30px;
+	text-transform:uppercase;
+	margin-bottom:10px;
+	height:45px;
+}
+.sub-item{
+	float:left;
+	width:198px;
+	height:297px;
+	border:1px solid #CDCDCD;
+	border-radius:8px;
+	margin-right:27px;
+	margin-left:0px;
+}
+.sub-item img{
+	width:198px;
+	height:106px;
+	border-bottom:1px solid #CDCDCD;
+}
+.sub-item-content{
+	padding:12px 19px;
+}
+.sub-item-desc{
+	font-size:13px;
+	line-height:16px;
+}
+.sub-item-title{
+	font-size:16px;
+	line-height:20px;
+}
+.sub-item-date{
+	font-size:11px;
+	color:#797979;
+	font-weight:bold;
+	margin:10px 0px;
+}
+
+.main-item{
+	width:878px;
+	border:1px solid #CDCDCD;
+	border-radius:8px;
+	margin-bottom:30px;
+}
+.main-item-content{
+	float:left;
+	width: 656px;
+	padding:25px 20px 10px 20px;
+}
+.main-item img{
+	float:left;
+	width:182px;
+	height:134px;
+}
+.main-item-title{
+	font-size:24px;
+	line-height:18px;
+}
+.main-item-date{
+	font-weight:bold;
+	font-size:13px;
+	color:#797979;
+	margin:8px 0px;
+}
+.main-item-desc{
+	font-size:15px;
+	line-height:18px;
+}
+
+ul,li{
+	padding-left:0px;
+	list-style-type:none;
+}
+.clear{
+	clear:both;
+}
