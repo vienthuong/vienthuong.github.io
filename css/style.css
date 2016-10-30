@@ -1,91 +1,123 @@
-*{
-	font-family:"Tahoma";
+body{
+	font-family: "Roboto";
+	padding-top:70px;
+	background-image:url("../images/body-bg.png");
+	background-size:100%;
+	background-attachment: fixed;
 }
-.wrapper{
-	width:910px;
-	margin-top:7px;
-	margin-left:20px;
+.main-content{
 }
-h1, h2 a, h3 a{
-	text-decoration:none;
-	color:#58a808;
-	font-weight:normal;
+.about-me-p{
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 20px;
+	padding:20px;
+	box-shadow: 0 0 30px white;
 }
-.page-title{
-	font-size:20px;
-	color:#58a808;
-	background: url("../images/dots.gif") no-repeat left 30px;
-	text-transform:uppercase;
-	margin-bottom:10px;
-	height:45px;
+.free-style-info{
+	padding-top:200px;
+	text-align: center;
 }
-.sub-item{
-	float:left;
-	width:198px;
-	height:297px;
-	border:1px solid #CDCDCD;
-	border-radius:8px;
-	margin-right:27px;
-	margin-left:0px;
+.my-btn-row{
+	text-align: center;
 }
-.sub-item img{
-	width:198px;
-	height:106px;
-	border-bottom:1px solid #CDCDCD;
-}
-.sub-item-content{
-	padding:12px 19px;
-}
-.sub-item-desc{
-	font-size:13px;
-	line-height:16px;
-}
-.sub-item-title{
-	font-size:16px;
-	line-height:20px;
-}
-.sub-item-date{
-	font-size:11px;
-	color:#797979;
-	font-weight:bold;
-	margin:10px 0px;
+.my-btn{
+	background:url("../images/button-bg.png");
+	background-position: center center;
+	background-size:110%;
+	border:2px solid rgba(0,0,0,0.5);
+	border-radius: 90px;
+	padding-top:63px;
+	width:120px;
+	height:120px;
+	color:white;
+	text-transform: uppercase;
+	text-shadow: none;
+	margin-bottom:100px;
+	z-index: 1;
+	position: absolute;
 }
 
-.main-item{
-	width:878px;
-	border:1px solid #CDCDCD;
-	border-radius:8px;
-	margin-bottom:30px;
+.my-btn:hover{
+	border-color:rgba(255,255,255,0.8);
+	background-position: center center;
+	background-size:110%;
+	box-shadow: 0 0 20px black;
+	width:150px;
+	height:150px;
+	color:white;
+	font-size:18px;
+	padding-top:80px;
+	transition: 0.2s;
 }
-.main-item-content{
-	float:left;
-	width: 656px;
-	padding:25px 20px 10px 20px;
+.my-btn:link{
+	background:url("../images/button-bg.png");
+	background-position: center center;
+	background-size:110%;
+	border-color:rgba(255,255,255,1);
 }
-.main-item img{
-	float:left;
-	width:182px;
-	height:134px;
+.btn.my-btn:focus{
+	border:2px solid black;
+	border-color:rgba(255,255,255,1);
+	box-shadow: 0 0 40px white;
+	width:150px;
+	height:150px;
+	color:white;
+	font-size:18px;
+	padding-top:80px;
+	transition: 0.2s;
 }
-.main-item-title{
-	font-size:24px;
-	line-height:18px;
+.btn.my-btn:active{
+	border:2px solid black;
+	border-color:rgba(255,255,255,1);
+	box-shadow: 0 0 40px white;
+	width:150px;
+	height:150px;
+	color:white;
+	transition: 0.2s;
 }
-.main-item-date{
-	font-weight:bold;
-	font-size:13px;
-	color:#797979;
-	margin:8px 0px;
+.my-btn-row{
+	text-align: center;
+	vertical-align: center;
 }
-.main-item-desc{
-	font-size:15px;
-	line-height:18px;
+.my-info-btn{
+	top:-100px;
+	left:200px;
 }
-
-ul,li{
-	padding-left:0px;
-	list-style-type:none;
+.my-skill-btn{
+	top:330px;
+	left:-60px;
 }
-.clear{
-	clear:both;
+.my-hobby-btn{
+	top:330px;
+	left:440px;
+}
+.my-exp-btn{
+	top:50px;
+	left:-70px;
+}
+.my-contact-btn{
+	top:50px;
+	left:450px;
+}
+.my-download-btn{
+	display:none;
+	top:450px;
+	left:200px;
+	background-image:url("../images/download-bg-btn.png")!important;
+}
+.resume{
+	background:url("../images/resume-bg.png");
+	border:5px solid black;
+	border-radius: 275px;
+	padding:80px;
+	box-shadow: 0 0 10px white;
+	width:520px;
+	height:520px;
+	text-align: center;
+	position: relative center center;
+}
+footer{
+	height:100px;
+	margin-top:120px;
+	background-color:cyan;
 }

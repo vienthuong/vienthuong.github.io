@@ -1,60 +1,86 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Bài kiểm tra 1</title>		
-	<link href="css/reset.css" type="text/css" rel="stylesheet" />
-	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<title>My Résume</title>
+	<meta charset="UTF-8"/>	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="css\font-awesome-4.7.0\css\font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-	<div class="wrapper">
-		<h1 class="page-title">cuộc thi ý tưởng thiết kế website</h1>
-			<div class="main-item">
-			<img src="images/h1.png" alt=""/>
-			<div class="main-item-content">
-				<h2 class="main-item-title"><a href="#" title="">Gia Huy dự thi "Tài năng lập trình trẻ 2014"</a></h2>
-				<p class="main-item-date">Ngày đăng: 14/01/2016</p>
-				<p class="main-item-desc">Website thực hiện bởi công nghệ JAVA JSP-SERVLET. Trang web giúp người bán hàng có thể quản lý các loài hoa một cách dễ dàng. Qua website có thể tiếp cận khách hàng và cho phép họ đặt hàng...</p>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top my-nav">
+ 			 <div class="container">
+ 			   	<div class="navbar-header">
+			      <a type="a" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </a>
+			      <a class="navbar-brand" href="#">My CV</a>
+			    </div>
+ 			 </div>
+		</nav>	
+	</header>
+	<div class="container">
+		<div class="main-content">
+			<div class="row">	
+				<div class="col-md-12 about-me-p">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 			</div>
-			<div class="clear"></div>
 		</div>
-		<div class="sub-item-list">
-			<ul>
-				<li class="sub-item">
-					<img src="images/h2.png" alt=""/>
-					<div class="sub-item-content">
-						<h3 class="sub-item-title"><a href="#" title="">Gia Huy dự thi "Tài năng lập trình trẻ 2014"</a></h3>
-						<p class="sub-item-date">Ngày đăng: 14/01/2016</p>
-						<p class="sub-item-desc">Website thực hiện bởi công nghệ JAVA JSP-SERVLET. Trang web giúp người bán hàng có thể quản lý...</p>
+		<div class="row">
+			<div class="col-md-12 free-style-info">
+				<div class="row my-btn-row">
+						<div class="col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1 resume">
+							<div class="resume-content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+							<a href="javascript:void(0)" role="button" class="btn btn-default my-btn my-info-btn">Info</a>
+							<a href="javascript:void(0)" role="button" class="btn btn-default my-btn my-exp-btn">Experience</a>
+							<a href="javascript:void(0)" role="button" class="btn btn-default my-btn my-skill-btn">Skill</a>
+							<a href="javascript:void(0)" role="button" class="btn btn-default my-btn my-hobby-btn">Hobby</a>
+							<a href="javascript:void(0)" role="button" class="btn btn-default my-btn my-contact-btn">Contact</a>
+							<a href="javascript:void(0)" role="button" class="btn btn-default my-btn my-download-btn">Download CV</a>
+						</div>
 					</div>
-				</li>
-				<li class="sub-item">
-					<img src="images/h3.png" alt=""/>
-					<div class="sub-item-content">
-						<h3 class="sub-item-title"><a href="#" title="">Gia Huy dự thi "Tài năng lập trình trẻ 2014"</a></h3>
-						<p class="sub-item-date">Ngày đăng: 14/01/2016</p>
-						<p class="sub-item-desc">Website thực hiện bởi công nghệ JAVA JSP-SERVLET. Trang web giúp người bán hàng có thể quản lý...</p>
-					</div>
-				</li>
-				<li class="sub-item">
-					<img src="images/h4.png" alt=""/>
-					<div class="sub-item-content">
-						<h3 class="sub-item-title"><a href="#" title="">Gia Huy dự thi "Tài năng lập trình trẻ 2014"</a></h3>
-						<p class="sub-item-date">Ngày đăng: 14/01/2016</p>
-						<p class="sub-item-desc">Website thực hiện bởi công nghệ JAVA JSP-SERVLET. Trang web giúp người bán hàng có thể quản lý...</p>
-					</div>
-				</li>
-				<li class="sub-item">
-					<img src="images/h5.png" alt=""/>
-					<div class="sub-item-content">
-						<h3 class="sub-item-title"><a href="#" title="">Gia Huy dự thi "Tài năng lập trình trẻ 2014"</a></h3>
-						<p class="sub-item-date">Ngày đăng: 14/01/2016</p>
-						<p class="sub-item-desc">Website thực hiện bởi công nghệ JAVA JSP-SERVLET. Trang web giúp người bán hàng có thể quản lý...</p>
-					</div>
-				</li>
-				<li class="clear"></li>
-			</ul>
+				</div>					
+			</div>
 		</div>
 	</div>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">asdsad</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
