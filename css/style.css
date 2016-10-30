@@ -2,7 +2,7 @@ body{
 	font-family: "Roboto";
 	padding-top:70px;
 	background-image:url("../images/body-bg.png");
-	background-size:100%;
+	background-size:cover%;
 	background-attachment: fixed;
 }
 .main-content{
@@ -12,6 +12,7 @@ body{
 	border-radius: 20px;
 	padding:20px;
 	box-shadow: 0 0 30px white;
+	margin:20px;
 }
 .free-style-info{
 	padding-top:200px;
@@ -108,13 +109,25 @@ body{
 .resume{
 	background:url("../images/resume-bg.png");
 	border:5px solid black;
-	border-radius: 275px;
-	padding:80px;
+	border-radius: 260px;
 	box-shadow: 0 0 10px white;
-	width:520px;
-	height:520px;
-	text-align: center;
-	position: relative center center;
+	max-width:520px;
+	max-height: 520px;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+}
+.resume-content{
+	padding:10px;
+	width:350px;
+	height:350px;
+	overflow: hidden;
+	margin:80px auto;
+	text-align: justify;
+}
+.resume-content:active,.resume-content:focus{
+	overflow:auto;
 }
 footer{
 	height:100px;
