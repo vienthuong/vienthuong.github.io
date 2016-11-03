@@ -1,7 +1,11 @@
 body{
 	font-family: "Roboto";
 	background-image:url("../images/body-bg.png");
+<<<<<<< HEAD
 	background-size:cover;
+=======
+	background-size:cover%;
+>>>>>>> 807e8ace3a6afd5cc90dfa32cfa509f94d2c37ee
 	background-attachment: fixed;
 	position: relative;
 	padding-top:70px;
@@ -128,6 +132,7 @@ form input:focus,form textarea:focus{
 	font-family: "impact";
 	font-size: 50px;
 	text-align: center;
+<<<<<<< HEAD
 	width:80px;
 	border:2px solid white;
 	width:130px;
@@ -226,6 +231,58 @@ form input:focus,form textarea:focus{
 	color:#453E38;
 	line-height: 45px;
 	font-size:30px;
+=======
+	vertical-align: center;
+}
+.my-info-btn{
+	top:-100px;
+	left:200px;
+}
+.my-skill-btn{
+	top:330px;
+	left:-60px;
+}
+.my-hobby-btn{
+	top:330px;
+	left:440px;
+}
+.my-exp-btn{
+	top:50px;
+	left:-70px;
+}
+.my-contact-btn{
+	top:50px;
+	left:450px;
+}
+.my-download-btn{
+	display:none;
+	top:450px;
+	left:200px;
+	background-image:url("../images/download-bg-btn.png")!important;
+}
+.resume{
+	background:url("../images/resume-bg.png");
+	border:5px solid black;
+	border-radius: 260px;
+	box-shadow: 0 0 10px white;
+	max-width:520px;
+	max-height: 520px;
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	position: relative;
+}
+.resume-content{
+	padding:10px;
+	width:350px;
+	height:350px;
+	overflow: hidden;
+	margin:80px auto;
+	text-align: justify;
+}
+.resume-content:active,.resume-content:focus{
+	overflow:auto;
+>>>>>>> 807e8ace3a6afd5cc90dfa32cfa509f94d2c37ee
 }
 .row{
 	margin-top:20px;
@@ -248,6 +305,7 @@ form input:focus,form textarea:focus{
 }
 
 footer{
+<<<<<<< HEAD
 	height::150px;
 	margin-top:50px;
 	padding-top:10px;
@@ -303,3 +361,9 @@ footer{
 .clear{
 	clear:both;
 }
+=======
+	height:100px;
+	margin-top:120px;
+	background-color:cyan;
+}
+>>>>>>> 807e8ace3a6afd5cc90dfa32cfa509f94d2c37ee
