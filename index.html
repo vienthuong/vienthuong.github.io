@@ -11,19 +11,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="250">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	<header>
 		<nav class="navbar navbar-dark bg-inverse navbar-fixed-top my-nav">
 			<div class="container">
-			<span class="navbar-text float-xs-right text-muted">
-		    	Hello! Have a niceday!
-		  	</span>
+			<div class="col-md-2 col-xs-0 my-logo">
+				<a href="#" title="My Resume"><img src="images/logo.png" alt="logo"/></a>
+			</div>
+			  <a class="navbar-brand my-brand float-xs-right float-md-right" href="#">My CV</a>
 			  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
-			  <div class="collapse navbar-toggleable-md" id="navbarResponsive">
-			    <a class="navbar-brand my-brand" href="#">My CV</a>
+			  <div class="collapse navbar-toggleable-md my-nav-menu col-md-10 col-xs-12" id="navbarResponsive">
 				    <ul class="nav navbar-nav">
 				     	<li class="nav-item">
 				        	<a class="nav-link my-nav-link" href="#info-row">INFO</a>
@@ -35,6 +33,12 @@
 				       		<a class="nav-link my-nav-link" href="#skill-row">SKILL</a>
 				      	</li>
 				      	<li class="nav-item">
+				       		<a class="nav-link my-nav-link" href="#lang-row">LANGUAGE</a>
+				      	</li>
+				      	<li class="nav-item">
+				       		<a class="nav-link my-nav-link" href="#project-row">PROJECT</a>
+				      	</li>
+				      	<li class="nav-item">
 				        	<a class="nav-link my-nav-link" href="#more-row">MORE</a>
 				      	</li>
 				    </ul>
@@ -43,22 +47,11 @@
 		</nav>	
 	</header>
 	<div class="container">
-		<div>See me here
-		<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/581b855ce0eacb0f20e2311a/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script--></div>
-		<div class="row row-eq-height my-summary">
-			<div class="col-md-4 col-xs-12 col-sm-12">
+		<div class="welcome-msg">
+			<p>!Welcome to my site</p>
+		</div>
+		<div class="row my-summary">
+			<div class="col-lg-4 col-xs-12 col-sm-12">
 				<div class="card">
 				  <div class="card-block">
 				    <h4 class="card-title">Thuong Le</h4>
@@ -73,31 +66,29 @@ s0.parentNode.insertBefore(s1,s0);
 					<a href="#" class="card-link"><i class="fa fa-github"></i></a>
 					<a href="#" class="card-link"><i class="fa fa-skype"></i></a>
 					<a href="#" class="card-link"><i class="fa fa-phone"></i></a>
-					<button class="dl-cv-btn"><i class="fa fa-download"></i><span> my CV</span></button>
+					<p><button class="dl-cv-btn"><i class="fa fa-download"></i><span> my CV</span></button></p>
 				  </div>
 				</div>
 			</div>
-			<div class="col-md-8 col-xs-12 col-sm-12 free-style-info">
+			<div class="col-lg-8 col-xs-12 col-sm-12">
 				<div class="my-contact">
-					<form>
+					<form data-toggle="validator" role="form" id="contact-form">
 					<h2>Contact me whenever you need</h2>
 					 <div class="form-group">
 					    <label for="myInputName">Sir, I need your name</label>
-					    <input type="text" class="form-control" id="myInputName" placeholder="Enter your name">
+					    <input type="text" class="form-control" name="myInputName" placeholder="Enter your name" required>
 					  </div>	  
 					  <div class="form-group">
-					    <label for="myInputEmail">Email address</label>
-					    <input type="email" class="form-control" id="myInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-					  </div>	  
-					  <div class="form-group">
-					    <label for="myTextArea">Message</label>
-					    <textarea class="form-control" id="myTextArea" rows="3"></textarea>
+					    <label for="inputEmail" class="control-label">Email</label>
+					    <input type="email" class="form-control" name="myInputEmail" placeholder="Email" required>
 					  </div>
 					  <div class="form-group">
-					    <label for="myInputFile">File input</label>
-					    <input type="file" class="form-control-file" id="myInputFile" aria-describedby="fileHelp">
-					    <small id="fileHelp" class="form-text text-muted">Add your attachment file which can describe exactly what you want me to do.</small>
+					    <label for="inputPhone" class="control-label">Phone</label>
+					    <input type="text" class="form-control" name="myInputPhone" placeholder="Phone" required>
+					  </div>					  
+					  <div class="form-group">
+					    <label for="myTextArea">Message</label>
+					    <textarea class="form-control" name="myTextArea" rows="5" placeholder="Any detail?" required></textarea>
 					  </div>
 						<button type="submit" class="send-btn"><i class="fa fa-send"></i><span> SEND</span></button>
 					</form>
@@ -106,52 +97,90 @@ s0.parentNode.insertBefore(s1,s0);
 		</div>
 		<div class="main-content">
 			<div class="row">	
-				<div class="col-md-6 col-xs-12 my-card my-card-left" id="info-row">
-					<h3 class="card-circle">INFO</h3>		
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="col-md-6 col-xs-12 my-card my-card-left">
+					<h3 class="card-circle"><span id="info-row"></span>INFO</h3>		
+					<p>
+					<span class="info-label">Full name	:</span>  <span class="info-content">Lê Viễn Thương</span><br/>
+ 					<span class="info-label">Gender	:</span>  <span class="info-content">Male <i class="fa fa-mars"></i></span><br/>
+ 					<span class="info-label">Date of Birth	:</span> <span class="info-content">09/01/1994</span><br/>
+ 					<span class="info-label">Interests	:</span>  <span class="info-content">Movie, music, travel.</span><br/>
+					<span class="info-label">Phone	:</span>  <span class="info-content">0935 57 9194</span><br/>
+					<span class="info-label">Native Province	:</span>  <span class="info-content">Đà Nẵng</span></p>
+					<span class="clear"></span>
 				</div>	
 				<div class="clear"></div>
 			</div>
 			<div class="row">	
-				<div class="col-md-6 push-md-6 col-xs-12 my-card my-card-right" id="exp-row">
-					<h3 class="card-circle">EXP</h3>		
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="col-md-6 push-md-6 col-xs-12 my-card my-card-right">
+					<h3 class="card-circle"><span id="exp-row"></span>EXP</h3>		
+					<p><i class="fa fa-arrow-circle-right"></i> 2012-2017: Studying in Danang University of Econimic, major in Management System of Information (currently last semester) <br/>
+					<i class="fa fa-arrow-circle-right"></i> 12/2016-4/2016: Training in Logigear Software Testing Company as Intern. <br/>
+					<i class="fa fa-arrow-circle-right"></i> 9/2016 ---: PHP Web Developer at VinaENTER EDU center.</p>
 				</div>	
 				<div class="clear"></div>
 			</div>
 			<div class="row">	
-				<div class="col-md-6 col-xs-12 my-card my-card-left" id="skill-row">
-					<h3 class="card-circle">SKILL</h3>		
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="col-md-6 col-xs-12 my-card my-card-left">
+					<h3 class="card-circle"><span id="skill-row"></span>SKILL</h3>		
+					<p>
+					<strong>Technical:</strong><br/>
+						<span style="display:block;margin-left:30px;">
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;HTML, CSS, Javascript, Bootstrap.<br/>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;MS SQL Server, MySQL, Basic Database<br/>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Basic Adobe Photoshop skills.<br/>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Manual Testing and Basic Automation Testing.<br/>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Test case design<br/></span>
+					<strong>Soft Skills:</strong><br/>
+						<span style="display:block;margin-left:30px;">
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Team work.<br/>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Listener, fast learner, hard working<br/>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Flexible, energetic, patient.<br/>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Good in communication, especially in human relations</span>
+					</p>
 				</div>
 				<div class="clear"></div>					
 			</div>
 			<div class="row">	
-				<div class="col-md-6 push-md-6 col-xs-12 my-card my-card-right" id="more-row">
-					<h3 class="card-circle">MORE</h3>		
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="col-md-6 push-md-6 col-xs-12 my-card my-card-right">
+					<h3 class="card-circle" style="font-size:30px"><span id="lang-row"></span>LANGUAGE</h3>
+					<p>
+					<span style="font-weight: bold;font-size:20px;">English</span><br/>
+					<span class="info-label"><strong>Writing</strong>	:</span> <span class="info-content">Good</span><br/>
+ 					<span class="info-label"><strong>Reading</strong>	:</span> <span class="info-content">Good </span><br/>
+ 					<span class="info-label"><strong>Speaking</strong>	:</span> <span class="info-content">Moderate</span><br/>
+ 					<span class="info-label"><strong>Listening</strong>	:</span>  <span class="info-content">Moderate</span><br/>
+					<span class="clear"></span>
+					<small>Interested in learning new languages</small>
+					</p>
+				</div>	
+				<div class="clear"></div>
+			</div>
+			<div class="row">	
+				<div class="col-md-6 col-xs-12 my-card my-card-left">
+					<h3 class="card-circle" style="font-size:35px;"><span id="project-row"></span>PROJECT</h3>		
+					<p>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;<a href="http://vienthuong.github.io">Responsive CV Template by Bootstrap: <i class="fa fa-address-book-o"></a></i>
+						<br/>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;.....</i>
+
+					</p>
+				</div>
+			</div>
+			<div class="row">	
+				<div class="col-md-6 push-md-6 col-xs-12 my-card my-card-right">
+					<h3 class="card-circle"><span id="more-row"></span>MORE</h3>		
+					<p>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Working as Online Writer for ESV and some game site.<br/>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Managed some online forums or facebook page as Moderate, Translator, Editor.<br/>
+						<i class="fa fa-arrow-circle-right"></i>&nbsp;&nbsp;Photo and Video Editor Skill (PS, SonyVegas, Aegisub).<br/>
+					</p>
 				</div>
 				<div class="clear"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-xs-12 quotes">	
+						<p class="card-text"><i class="fa fa-quote-left"></i>Thanks for reading my resume. Have a niceday!<i class="fa fa-quote-right"></i>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -172,5 +201,12 @@ s0.parentNode.insertBefore(s1,s0);
 			</div>
 		</div>
 	</footer>
+	<div class="back-to-top"><div class="scroll-wrapper"></div><i class="fa fa-arrow-circle-up"></i></div>
+	<!-- script -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/myvalid.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>
 </body>
 </html>
